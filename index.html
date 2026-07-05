@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditi Vaish | Marketing Strategist & Social Media Expert</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Hi, I'm Aditi! A passionate Marketing Strategist, Social Media Expert, and Brand Storyteller. Helping brands grow through creative content strategy and meaningful connections.">
+    <meta name="keywords" content="Aditi Vaish, Marketing Strategist, Social Media Executive, Brand Storytelling, Influencer Marketing, Content Creator Portfolio, Noida Marketing, GL Bajaj MBA">
+    <meta name="author" content="Aditi Vaish">
+    
+    <!-- Google Fonts: Playfair Display & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Custom Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Floating Sparkles Background Container -->
+    <div class="sparkles-bg-container" id="sparklesBg"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">Aditi.💕</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle Navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#why-me" class="nav-link">Why Me</a></li>
+                    <li><a href="#testimonials" class="nav-link">Love</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main>
+        
+        <!-- Hero Section -->
+        <section class="hero-section" id="hero">
+            <div class="container hero-container">
+                <!-- Floating Decorative Background Blobs -->
+                <div class="blob-bg blob-pink"></div>
+                <div class="blob-bg blob-lavender"></div>
+                
+                <div class="hero-content">
+                    <div class="hero-tag">Social Media Architect ✨</div>
+                    <h1 class="hero-title">
+                        Hi, I'm Aditi <span class="heart-pulse">💕</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        Marketing Strategist • Social Media Expert • Brand Storyteller
+                    </h2>
+                    <p class="hero-intro">
+                        Helping brands grow through creative storytelling, strategic marketing, engaging content, and meaningful audience connections.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary btn-shimmer">
+                            View Portfolio <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="Aditi_Vaish_Resume.docx" download class="btn btn-secondary">
+                            Download Resume <i class="fa-solid fa-download"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-tertiary">
+                            Let's Work Together
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-image-wrapper">
+                    <div class="photo-glow-circle"></div>
+                    <div class="photo-container">
+                        <img src="aditi_profile.png" alt="Aditi Vaish profile picture" class="cutout-photo">
+                    </div>
+                    
+                    <!-- Floating Achievements & Arrows -->
+                    <!-- Highlights Card 1: MBA -->
+                    <div class="achievement-floating card-mba" id="ach1">
+                        <div class="ach-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <div class="ach-text">
+                            <strong>MBA Candidate</strong>
+                            <span>HR & Marketing</span>
+                        </div>
+                        <!-- Curved Decorative Arrow pointing to MBA -->
+                        <svg class="decorative-arrow arrow-mba" viewBox="0 0 100 100" fill="none">
+                            <path d="M 10 90 Q 50 100 80 50" stroke="#E5C158" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" />
+                            <polygon points="80,50 72,55 77,61" fill="#E5C158" />
+                        </svg>
+                    </div>
+                    
+                    <!-- Highlights Card 2: YouTube Growth -->
+                    <div class="achievement-floating card-youtube" id="ach2">
+                        <div class="ach-icon"><i class="fa-brands fa-youtube"></i></div>
+                        <div class="ach-text">
+                            <strong>2.9M+ Views</strong>
+                            <span>YouTube Growth</span>
+                        </div>
+                        <!-- Curved Decorative Arrow pointing to YT -->
+                        <svg class="decorative-arrow arrow-youtube" viewBox="0 0 100 100" fill="none">
+                            <path d="M 90 90 Q 50 90 20 40" stroke="#EDE7F6" stroke-width="2.5" stroke-linecap="round" />
+                            <polygon points="20,40 28,45 23,51" fill="#EDE7F6" />
+                        </svg>
+                    </div>
+
+                    <!-- Highlights Card 3: Instagram views -->
+                    <div class="achievement-floating card-instagram" id="ach3">
+                        <div class="ach-icon"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="ach-text">
+                            <strong>70K+ Reach</strong>
+                            <span>Instagram Views</span>
+                        </div>
+                        <svg class="decorative-arrow arrow-instagram" viewBox="0 0 100 100" fill="none">
+                            <path d="M 50 90 Q 90 70 80 10" stroke="#FCE4EC" stroke-width="2.5" stroke-linecap="round" stroke-dasharray="4 4" />
+                            <polygon points="80,10 73,18 83,16" fill="#FCE4EC" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">A Bit About Me 🌸</span>
+                    <h2 class="section-title">The Girl Behind the Analytics</h2>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-card intro-card glass">
+                        <h3>Hi, beautiful soul! 💫</h3>
+                        <p>
+                            I am a passionate and results-driven <strong>Social Media Executive</strong> and MBA Candidate specializing in <strong>HR & Marketing</strong> at GL Bajaj Institute of Management and Research. 
+                        </p>
+                        <p>
+                            My professional path is fueled by a simple belief: every brand has a heart, and my job is to translate that heart into high-impact digital narratives. From optimizing Instagram reels that grab attention, to writing LinkedIn thought leadership posts, to managing the numbers behind YouTube channels, I mix visual creativity with deep analytical research.
+                        </p>
+                        <p>
+                            With experience working across digital agency landscapes (like <em>InfluencerAct</em>) and community-driven spaces, I craft social campaigns that look stunning and drive inbound business.
+                        </p>
+                    </div>
+                    
+                    <div class="strengths-wrapper">
+                        <h3>My Superpowers ⚡</h3>
+                        <div class="strengths-grid">
+                            <div class="strength-card glass">
+                                <span class="strength-number">01</span>
+                                <h4>Creativity</h4>
+                                <p>Ideating thumb-stopping layouts, aesthetics, and writing engaging hooks that stand out in crowded feeds.</p>
+                            </div>
+                            <div class="strength-card glass">
+                                <span class="strength-number">02</span>
+                                <h4>Strategic Thinking</h4>
+                                <p>Blending SEO, target personas, and market positioning to build campaigns that convert views to clients.</p>
+                            </div>
+                            <div class="strength-card glass">
+                                <span class="strength-number">03</span>
+                                <h4>Brand Building</h4>
+                                <p>Establishing strong, cohesive identities with harmonious style manuals, custom tone of voice, and visuals.</p>
+                            </div>
+                            <div class="strength-card glass">
+                                <span class="strength-number">04</span>
+                                <h4>Communication</h4>
+                                <p>Bridging the gap between brand goals, creators' ideas, and target audiences with clear communication.</p>
+                            </div>
+                            <div class="strength-card glass">
+                                <span class="strength-number">05</span>
+                                <h4>Trend Analysis</h4>
+                                <p>Jumping on trending audios, viral formats, and algorithm shifts before they saturate the market.</p>
+                            </div>
+                            <div class="strength-card glass">
+                                <span class="strength-number">06</span>
+                                <h4>Community Growth</h4>
+                                <p>Fostering organic engagement and converting passive viewers into brand advocates and regular shoppers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience & Achievements Section -->
+        <section class="experience-section" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">My Journey 📈</span>
+                    <h2 class="section-title">Experience & Achievements</h2>
+                </div>
+
+                <!-- Stats Cards Grid -->
+                <div class="stats-grid">
+                    <!-- Instagram Views -->
+                    <div class="stat-card glass-stat">
+                        <div class="stat-icon pink-bg"><i class="fa-solid fa-chart-line"></i></div>
+                        <div class="stat-number" data-target="70000">0</div>
+                        <div class="stat-suffix">K+</div>
+                        <div class="stat-label">📈 Instagram Views</div>
+                    </div>
+                    <!-- Engagements -->
+                    <div class="stat-card glass-stat">
+                        <div class="stat-icon lavender-bg"><i class="fa-solid fa-heart"></i></div>
+                        <div class="stat-number" data-target="6500">0</div>
+                        <div class="stat-suffix">K+</div>
+                        <div class="stat-label">❤️ Engagements</div>
+                    </div>
+                    <!-- Organic Followers -->
+                    <div class="stat-card glass-stat">
+                        <div class="stat-icon cream-bg"><i class="fa-solid fa-users"></i></div>
+                        <div class="stat-number" data-target="221">0</div>
+                        <div class="stat-suffix">+</div>
+                        <div class="stat-label">👥 Organic Followers</div>
+                    </div>
+                    <!-- Inbound Enquiries -->
+                    <div class="stat-card glass-stat">
+                        <div class="stat-icon gold-bg"><i class="fa-solid fa-envelope-open-text"></i></div>
+                        <div class="stat-number" data-target="99">0</div>
+                        <div class="stat-suffix"></div>
+                        <div class="stat-label">📩 Inbound Enquiries</div>
+                    </div>
+                    <!-- LinkedIn Impressions -->
+                    <div class="stat-card glass-stat">
+                        <div class="stat-icon lavender-bg"><i class="fa-solid fa-users-viewfinder"></i></div>
+                        <div class="stat-number" data-target="19900">0</div>
+                        <div class="stat-suffix">K+</div>
+                        <div class="stat-label">📊 LinkedIn Impressions</div>
+                    </div>
+                    <!-- YouTube Views -->
+                    <div class="stat-card glass-stat">
+                        <div class="stat-icon pink-bg"><i class="fa-solid fa-play"></i></div>
+                        <div class="stat-number" data-target="2900000" data-format="m">0</div>
+                        <div class="stat-suffix">M+</div>
+                        <div class="stat-label">▶️ YouTube Views</div>
+                    </div>
+                    <!-- YouTube Watch Hours -->
+                    <div class="stat-card glass-stat">
+                        <div class="stat-icon cream-bg"><i class="fa-solid fa-hourglass-half"></i></div>
+                        <div class="stat-number" data-target="17500">0</div>
+                        <div class="stat-suffix">K</div>
+                        <div class="stat-label">⏳ Watch Hours</div>
+                    </div>
+                    <!-- Subscribers -->
+                    <div class="stat-card glass-stat">
+                        <div class="stat-icon gold-bg"><i class="fa-solid fa-bullseye"></i></div>
+                        <div class="stat-number" data-target="1200">0</div>
+                        <div class="stat-suffix">K</div>
+                        <div class="stat-label">🎯 Subscribers</div>
+                    </div>
+                </div>
+
+                <!-- Timeline of Experience -->
+                <div class="timeline-container">
+                    
+                    <!-- Job Card 1 -->
+                    <div class="timeline-card glass active-timeline">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <span class="timeline-date">Aug 2025 - Present</span>
+                            <h3 class="timeline-role">Social Media Executive</h3>
+                            <h4 class="timeline-company">InfluencerAct <span class="agency-tag">Digital Marketing Agency</span></h4>
+                        </div>
+                        
+                        <p class="timeline-desc">
+                            Spearheading accounts across Instagram, LinkedIn, and YouTube. Crafting tailored content matrices, managing creator collaborations, analyzing performance metadata, and deploying rapid growth tactics.
+                        </p>
+
+                        <!-- Responsibilities grid -->
+                        <div class="responsibilities-header">Core Responsibilities:</div>
+                        <div class="responsibilities-grid">
+                            <div class="resp-item">
+                                <div class="resp-icon"><i class="fa-solid fa-calendar-days"></i></div>
+                                <span>Content Strategy</span>
+                            </div>
+                            <div class="resp-item">
+                                <div class="resp-icon"><i class="fa-solid fa-user-group"></i></div>
+                                <span>Influencer Marketing</span>
+                            </div>
+                            <div class="resp-item">
+                                <div class="resp-icon"><i class="fa-solid fa-bullhorn"></i></div>
+                                <span>Brand Promotion</span>
+                            </div>
+                            <div class="resp-item">
+                                <div class="resp-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                <span>Trend Research</span>
+                            </div>
+                            <div class="resp-item">
+                                <div class="resp-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                                <span>Campaign Planning</span>
+                            </div>
+                            <div class="resp-item">
+                                <div class="resp-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+                                <span>Analytics & Insights</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Job Card 2 -->
+                    <div class="timeline-card glass">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-header">
+                            <span class="timeline-date">May 2025 - Jun 2025</span>
+                            <h3 class="timeline-role">HR & Social Media Intern</h3>
+                            <h4 class="timeline-company">Namashkar Foundation <span class="agency-tag">Non-Governmental Org (NGO)</span></h4>
+                        </div>
+                        <p class="timeline-desc">
+                            Coordinated volunteer onboarding and communication initiatives while assisting in generating awareness-based social media content, raising local event engagement, and planning digital communication campaigns.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">My Toolbox 🎨</span>
+                    <h2 class="section-title">Skills & Proficiencies</h2>
+                </div>
+                
+                <div class="skills-wrapper glass">
+                    <div class="sparkle-decorator sparkle-left">✨</div>
+                    <div class="sparkle-decorator sparkle-right">✨</div>
+                    <p class="skills-intro">A balanced blend of digital strategy, marketing frameworks, HR operations, and visual editing tools.</p>
+                    
+                    <div class="skills-cloud">
+                        <span class="skill-pill pink-pill">Social Media Marketing</span>
+                        <span class="skill-pill lavender-pill">Instagram Marketing</span>
+                        <span class="skill-pill cream-pill">LinkedIn Marketing</span>
+                        <span class="skill-pill pink-pill">Content Strategy</span>
+                        <span class="skill-pill gold-pill">Brand Building</span>
+                        <span class="skill-pill lavender-pill">Influencer Marketing</span>
+                        <span class="skill-pill cream-pill">Campaign Management</span>
+                        <span class="skill-pill pink-pill">Audience Engagement</span>
+                        <span class="skill-pill gold-pill">Content Planning</span>
+                        <span class="skill-pill lavender-pill">Google Workspace</span>
+                        <span class="skill-pill cream-pill">Excel Mastery</span>
+                        <span class="skill-pill pink-pill">Communication</span>
+                        <span class="skill-pill gold-pill">HR Operations</span>
+                        <span class="skill-pill lavender-pill">Reel Optimization</span>
+                        <span class="skill-pill cream-pill">YouTube Analytics</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects Section -->
+        <section class="projects-section" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">My Work 🌸</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                </div>
+                
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass-project">
+                        <div class="project-image-gradient gradient-pink-lavender">
+                            <div class="project-badge"><i class="fa-solid fa-graduation-cap"></i> Research Project</div>
+                            <span class="project-illustration">✈️🤖</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Robotic Revolution in Aviation</h3>
+                            <p class="project-description">
+                                An academic AI-powered research project analyzing automation and technological integrations inside the aviation sector. Built using business frameworks including SWOT, PESTLE, and Porter's Five Forces.
+                            </p>
+                            <div class="project-tags">
+                                <span>SWOT Analysis</span>
+                                <span>PESTLE</span>
+                                <span>Porter's 5 Forces</span>
+                                <span>AI & Automation</span>
+                            </div>
+                            <a href="#contact" class="project-link">Discuss Frameworks <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2 -->
+                    <div class="project-card glass-project">
+                        <div class="project-image-gradient gradient-lavender-cream">
+                            <div class="project-badge"><i class="fa-solid fa-lightbulb"></i> Tech Innovation</div>
+                            <span class="project-illustration">🪖🔌</span>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Smart Helmet</h3>
+                            <p class="project-description">
+                                A tech-enabled safety solution concept integrating sensors and smart features designed to protect on-road operators. Conducted feasibility reviews, product architecture, and target pricing.
+                            </p>
+                            <div class="project-tags">
+                                <span>Sensor Integration</span>
+                                <span>Safety Tech</span>
+                                <span>Market Feasibility</span>
+                                <span>Product Concept</span>
+                            </div>
+                            <a href="#contact" class="project-link">Request Concept Deck <i class="fa-solid fa-chevron-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Work With Me Section -->
+        <section class="why-me-section" id="why-me">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Why Aditi? 🤝</span>
+                    <h2 class="section-title">Why Work With Me?</h2>
+                </div>
+                
+                <div class="why-grid">
+                    <div class="why-card glass-why">
+                        <div class="why-icon-circle"><i class="fa-solid fa-lightbulb"></i></div>
+                        <h3>💡 Creative Campaign Ideas</h3>
+                        <p>I don't do boring content. I design visual hooks and aesthetic narratives that align with modern Pinterest trends and premium brand guidelines.</p>
+                    </div>
+                    
+                    <div class="why-card glass-why">
+                        <div class="why-icon-circle"><i class="fa-solid fa-mobile-screen-button"></i></div>
+                        <h3>📱 Social Media Growth</h3>
+                        <p>Through active keyword strategy and platform optimization, I target organic growth that creates real followers, not just cold vanity metrics.</p>
+                    </div>
+                    
+                    <div class="why-card glass-why">
+                        <div class="why-icon-circle"><i class="fa-solid fa-chart-column"></i></div>
+                        <h3>📈 Data-Driven Decisions</h3>
+                        <p>I balance my creative side with analytical tracking. I review reach graphs, retention metrics, and click-through rates to continuously improve results.</p>
+                    </div>
+                    
+                    <div class="why-card glass-why">
+                        <div class="why-icon-circle"><i class="fa-solid fa-handshake"></i></div>
+                        <h3>🤝 Strong Communication</h3>
+                        <p>With an educational background in HR & Marketing, I offer structured reporting, collaborative team coordination, and prompt client messaging.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <span class="sub-title">Client Love 💕</span>
+                    <h2 class="section-title">Kind Words From Colleagues</h2>
+                </div>
+                
+                <div class="testimonials-slider">
+                    <!-- Slide 1 -->
+                    <div class="testimonial-card glass">
+                        <div class="quote-mark">“</div>
+                        <p class="testimonial-text">
+                            Aditi's content strategies breathe life into campaigns. Her focus on aesthetics, combined with a meticulous approach to YouTube metadata optimization, yielded record metrics for our clients during her time at InfluencerAct.
+                        </p>
+                        <div class="testimonial-client">
+                            <strong>Prisha Sharma</strong>
+                            <span>Creative Director, InfluencerAct</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 2 -->
+                    <div class="testimonial-card glass">
+                        <div class="quote-mark">“</div>
+                        <p class="testimonial-text">
+                            During her internship, Aditi managed digital communication channels with warmth and professionalism. Her creative graphic templates for our awareness events drove higher volunteer turnout and improved engagement.
+                        </p>
+                        <div class="testimonial-client">
+                            <strong>Rohan Verma</strong>
+                            <span>Program Lead, Namashkar Foundation</span>
+                        </div>
+                    </div>
+                    
+                    <!-- Slide 3 -->
+                    <div class="testimonial-card glass">
+                        <div class="quote-mark">“</div>
+                        <p class="testimonial-text">
+                            Aditi displays rare talent. She has a strong visual eye that understands 'Pinterest Aesthetics' perfectly while utilizing solid analytical frameworks for planning. She's a tremendous asset to any digital marketing team.
+                        </p>
+                        <div class="testimonial-client">
+                            <strong>Dr. Ananya Sen</strong>
+                            <span>Professor (Marketing), GL Bajaj Institute</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <span class="sub-title">Let's Connect ✨</span>
+                        <h2 class="contact-heading">Let's Create Something Amazing Together</h2>
+                        <p class="contact-intro-text">
+                            Have a project in mind, want to scale your social accounts, or just chat about marketing trends? Drop me a message and let's bring your brand vision to life!
+                        </p>
+                        
+                        <div class="info-links-container">
+                            <a href="mailto:aditi8agrahari@gmail.com" class="info-link-card glass">
+                                <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                <div class="info-details">
+                                    <span>Email Me</span>
+                                    <strong>aditi8agrahari@gmail.com</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+919559456484" class="info-link-card glass">
+                                <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                <div class="info-details">
+                                    <span>Call / WhatsApp</span>
+                                    <strong>+91 9559456484</strong>
+                                </div>
+                            </a>
+                            
+                            <a href="https://linkedin.com/in/aditi-vaish08" target="_blank" class="info-link-card glass">
+                                <div class="info-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+                                <div class="info-details">
+                                    <span>Professional Network</span>
+                                    <strong>linkedin.com/in/aditi-vaish08</strong>
+                                </div>
+                            </a>
+                            
+                            <div class="info-link-card glass">
+                                <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                <div class="info-details">
+                                    <span>Based In</span>
+                                    <strong>Noida, India</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-wrapper glass">
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address</label>
+                                <input type="email" id="email" name="email" class="form-input" placeholder="hello@yourbrand.com" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="form-input" placeholder="Social Media Growth / Collaboration" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea id="message" name="message" rows="5" class="form-input text-area" placeholder="Hi Aditi, I'd love to chat about..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-submit btn-shimmer" id="submitBtn">
+                                Send Message ✨
+                            </button>
+                            
+                            <div class="form-response-msg" id="formResponse"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="#" class="footer-logo">Aditi.💕</a>
+                <p>Marketing Strategist • Social Media Expert • Brand Storyteller</p>
+            </div>
+            
+            <div class="footer-socials">
+                <a href="https://linkedin.com/in/aditi-vaish08" target="_blank" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:aditi8agrahari@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:+919559456484" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+            
+            <div class="footer-divider"></div>
+            
+            <p class="footer-credit">
+                Designed with creativity, strategy & lots of coffee ☕💖
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
