@@ -1363,7 +1363,7 @@ document.addEventListener('DOMContentLoaded', () => {
             +     '<div class="modal-meta-item"><span>Frequency</span><strong>' + doc.frequency + '</strong></div>'
             +   '</div>'
             + '</div>'
-            + '<div class="modal-main-content" style="grid-template-columns:1.1fr 0.9fr;gap:40px;">'
+            + '<div class="modal-text-grid">'
             +   '<div>'
             +     '<div class="modal-section-title">Content Strategy</div>'
             +     '<p class="modal-para">' + doc.strategy + '</p>'
