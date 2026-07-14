@@ -121,64 +121,56 @@ document.addEventListener('DOMContentLoaded', () => {
     // Social Media Posts / Carousels Database
     const socialPosts = [
         {
-            id: "post1",
-            category: "carousel",
-            platform: "instagram",
-            mediaUrl: "assets/post_1.jpeg",
-            imgW: 1111, imgH: 528,
-            name: "Stable Money Campaign Breakdown",
-            objective: "Summarize top FD interest rates in a visually premium Instagram carousel design.",
-            designThinking: "Used clean grids and a calm dark palette to convey safety, with strong yellow callouts for rates to capture attention immediately during active scrolling.",
-            caption: "Fixed deposit rates are peaking! 📈 Here's a breakdown of the highest yielding FDs you can secure right now. Stable returns, zero hassle. Click the link in bio to learn more. #StableMoney #FixedDeposits #Investing",
-            targetAudience: "Young professionals, millennial savers",
-            performance: "12.4K Impressions | 850 Saves | 4.2% App CTR",
-            role: "Visual Designer & Copywriter",
-            instagramUrl: "https://www.instagram.com/p/DTRytCHEvkh/"
+            id: "project1",
+            title: "Stable Money – Fixed Deposit Campaign",
+            platform: "Instagram",
+            contentType: "Carousel",
+            image: "assets/WhatsApp Image 2026-07-14 at 10.37.58 PM.jpeg",
+            description: "Designed an educational Instagram carousel explaining Fixed Deposit concepts in a simple and visually engaging way. The goal was to simplify financial information while maintaining strong visual storytelling.",
+            role: "Content Planning, Copywriting, Carousel Design",
+            tools: "Canva, ChatGPT",
+            livePostLink: "https://www.instagram.com/p/DTRytCHEvkh/",
+            imgW: 1170,
+            imgH: 1463
         },
         {
-            id: "post2",
-            category: "carousel",
-            platform: "linkedin",
-            mediaUrl: "assets/post_2.jpeg",
-            imgW: 1111, imgH: 562,
-            name: "Zero Brokerage Campaign Post",
-            objective: "Promote brokerage savings breakdown to professional LinkedIn users.",
-            designThinking: "Clean professional styling with bold math metrics. The visual contrast emphasizes savings using light backgrounds and blue/black font treatments suitable for corporate audiences.",
-            caption: "Are you overpaying in trading commissions? 📊 A breakdown of brokerage fees show active option traders spend up to 25% of profits on transactional costs. Switch to zero brokerage. #Trading #Investing #Brokerage",
-            targetAudience: "Active traders, financial professionals",
-            performance: "19.9K Impressions | 420 Engagements | 99 Inbound Inquiries",
-            role: "Content Strategist & Lead Writer",
-            instagramUrl: "https://www.instagram.com/p/DTKidA1EkVV/"
+            id: "project2",
+            title: "5 Paisa – Investment Awareness Post",
+            platform: "Instagram",
+            contentType: "Static Post",
+            image: "assets/WhatsApp Image 2026-07-14 at 10.39.04 PM.jpeg",
+            description: "Designed a clean and engaging static post to communicate investment-related information with strong branding and clear messaging.",
+            role: "Content Planning, Graphic Design",
+            tools: "Canva",
+            livePostLink: "https://www.instagram.com/p/DQwPF4MDNVV/",
+            imgW: 1170,
+            imgH: 1463
         },
         {
-            id: "post3",
-            category: "static",
-            platform: "instagram",
-            mediaUrl: "assets/post_3.jpeg",
-            imgW: 1064, imgH: 584,
-            name: "5 Paisa Onboarding Optimization",
-            objective: "Aesthetic graphic to reduce app onboarding drop-off.",
-            designThinking: "Minimal layout with soft cream tones and high-end typography to establish trust and lessen the anxiety of setting up investments.",
-            caption: "Investing isn't rocket science. It's just consistency. 💫 Start your automated SIP in under 60 seconds with 5paisa. Link in bio! #5Paisa #MutualFunds #FinancialFreedom",
-            targetAudience: "First-time earners, college students",
-            performance: "8.4K Reach | 630 Interactions | 110 Saves",
-            role: "Creative Director",
-            instagramUrl: "https://www.instagram.com/p/DOIqEu3EhL3/"
+            id: "project3",
+            title: "Influencer Marketing Strategy Carousel",
+            platform: "LinkedIn",
+            contentType: "Carousel",
+            image: "assets/WhatsApp Image 2026-07-14 at 10.40.37 PM.jpeg",
+            description: "Created an educational LinkedIn carousel focused on influencer marketing strategies to build thought leadership and increase engagement among professionals.",
+            role: "Content Research, Copywriting, Carousel Planning",
+            tools: "Canva, ChatGPT",
+            livePostLink: "https://www.linkedin.com/posts/influenceract_influencermarketing-creatoreconomy-brandstrategy-activity-7478699137232719872-T2C7",
+            imgW: 1080,
+            imgH: 1350
         },
         {
-            id: "post4",
-            category: "static",
-            platform: "linkedin",
-            mediaUrl: "assets/post_4.jpeg",
-            imgW: 1121, imgH: 413,
-            name: "Zet Partner Brand Identity",
-            objective: "Branding graphic highlighting partner earning perks.",
-            designThinking: "Used high-contrast orange and black elements representing Zet's brand colors to convey high-energy earning opportunities.",
-            caption: "Work from home and earn up to Rs. 30,000 monthly as a Zet Partner. Zero investment required. Sign up now! #ZetPartner #WFHJobs #EarnMoney",
-            targetAudience: "Self-employed, regional students, homemakers",
-            performance: "14.5K Reach | 890 Lead Registrations",
-            role: "Graphic Designer",
-            instagramUrl: "https://linkedin.com/in/aditi-vaish08" // Fallback to profile
+            id: "project4",
+            title: "Digital Marketing Industry Insight",
+            platform: "LinkedIn",
+            contentType: "Static Post",
+            image: "assets/WhatsApp Image 2026-07-14 at 10.42.08 PM.jpeg",
+            description: "Designed a professional LinkedIn static creative to share digital marketing insights, strengthen brand authority, and engage a B2B audience.",
+            role: "Content Strategy, Graphic Design",
+            tools: "Canva",
+            livePostLink: "https://www.linkedin.com/posts/influenceract_influencermarketing-kolkatamarketing-digitalads-activity-7356574569345794050-BNn1",
+            imgW: 1200,
+            imgH: 600
         }
     ];
 
@@ -728,23 +720,50 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const filtered = filterCategory === 'all' 
             ? socialPosts 
-            : socialPosts.filter(post => post.category === filterCategory || post.platform === filterCategory);
+            : socialPosts.filter(post => {
+                const typeMatch = post.contentType && post.contentType.toLowerCase().includes(filterCategory.toLowerCase());
+                const platformMatch = post.platform && post.platform.toLowerCase() === filterCategory.toLowerCase();
+                return typeMatch || platformMatch;
+              });
 
-        masonryGrid.innerHTML = filtered.map(post => `
+        masonryGrid.innerHTML = filtered.map(post => {
+            // Determine platform icon class
+            let platformIconClass = "fa-instagram";
+            if (post.platform.toLowerCase() === 'linkedin') {
+                platformIconClass = "fa-linkedin-in";
+            } else if (post.platform.toLowerCase() === 'youtube') {
+                platformIconClass = "fa-youtube";
+            }
+
+            return `
             <div class="masonry-item scroll-reveal" data-id="${post.id}">
                 <div class="post-media-wrapper">
-                    <img src="${post.mediaUrl}" alt="${post.name}" width="${post.imgW || 1111}" height="${post.imgH || 528}" loading="lazy">
+                    <img src="${post.image}" alt="${post.title}" width="${post.imgW || 1080}" height="${post.imgH || 1350}" loading="lazy">
                     <div class="post-overlay">
                         <div class="post-overlay-btn"><i class="fa-solid fa-expand"></i></div>
                     </div>
                 </div>
                 <div class="post-content">
-                    <div class="post-tag">${post.category} • ${post.platform}</div>
-                    <h4 class="post-title">${post.name}</h4>
-                    <p class="post-objective">${post.objective}</p>
+                    <div class="post-badge-row" style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
+                        <span class="badge-pill platform-badge" style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-glass); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-primary); display: flex; align-items: center; gap: 6px;">
+                            <i class="fa-brands ${platformIconClass}"></i> ${post.platform}
+                        </span>
+                        <span class="badge-pill type-badge" style="background: var(--gradient-gold); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.65rem; font-weight: 600; color: #0F0E0D; text-transform: uppercase; letter-spacing: 0.5px;">
+                            ${post.contentType}
+                        </span>
+                    </div>
+                    <h4 class="post-title" style="margin-top: 0; margin-bottom: 8px;">${post.title}</h4>
+                    <p class="post-objective" style="margin-bottom: 20px; line-height: 1.5;">${post.description}</p>
+                    
+                    <div class="post-actions" style="margin-top: auto;">
+                        <button class="btn btn-secondary view-project-btn" style="width: 100%; padding: 10px 16px; font-size: 0.78rem; border-radius: var(--radius-md); font-weight: 500; display: flex; align-items: center; justify-content: center; gap: 6px;">
+                            View Project <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
-        `).join('');
+            `;
+        }).join('');
 
         // Apply grid triggers
         masonryGrid.querySelectorAll('.masonry-item').forEach(item => {
@@ -1121,43 +1140,48 @@ document.addEventListener('DOMContentLoaded', () => {
         const post = socialPosts.find(p => p.id === id);
         if (!post || !modalContentArea || !overlayModal) return;
 
+        // Determine platform icon class
+        let platformIconClass = "fa-instagram";
+        if (post.platform.toLowerCase() === 'linkedin') {
+            platformIconClass = "fa-linkedin-in";
+        } else if (post.platform.toLowerCase() === 'youtube') {
+            platformIconClass = "fa-youtube";
+        }
+
         modalContentArea.innerHTML = `
             <div class="lightbox-body">
                 <div class="lightbox-image-box">
-                    <img src="${post.mediaUrl}" alt="${post.name}" width="${post.imgW || 1111}" height="${post.imgH || 528}">
+                    <img src="${post.image}" alt="${post.title}" width="${post.imgW || 1080}" height="${post.imgH || 1350}">
                 </div>
                 <div class="lightbox-details">
-                    <div class="modal-brand">${post.category} • ${post.platform}</div>
-                    <h3 class="modal-title" style="margin-bottom: 20px;">${post.name}</h3>
+                    <div class="modal-brand-row" style="display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap;">
+                        <span class="badge-pill platform-badge" style="background: rgba(255,255,255,0.06); border: 1px solid var(--border-glass); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.65rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-primary); display: flex; align-items: center; gap: 6px;">
+                            <i class="fa-brands ${platformIconClass}"></i> ${post.platform}
+                        </span>
+                        <span class="badge-pill type-badge" style="background: var(--gradient-gold); padding: 4px 10px; border-radius: var(--radius-pill); font-size: 0.65rem; font-weight: 600; color: #0F0E0D; text-transform: uppercase; letter-spacing: 0.5px;">
+                            ${post.contentType}
+                        </span>
+                    </div>
+                    <h3 class="modal-title" style="margin-bottom: 20px;">${post.title}</h3>
                     
                     <div style="margin-bottom: 24px;">
-                        <div class="modal-section-title" style="font-size: 0.95rem; margin-bottom: 6px;">Campaign Objective</div>
-                        <p class="modal-para" style="font-size: 0.82rem;">${post.objective}</p>
+                        <div class="modal-section-title" style="font-size: 0.95rem; margin-bottom: 6px;">Project Description</div>
+                        <p class="modal-para" style="font-size: 0.82rem; line-height: 1.55; color: var(--text-secondary);">${post.description}</p>
                     </div>
 
-                    <div style="margin-bottom: 24px;">
-                        <div class="modal-section-title" style="font-size: 0.95rem; margin-bottom: 6px;">Design Thinking</div>
-                        <p class="modal-para" style="font-size: 0.82rem;">${post.designThinking}</p>
-                    </div>
-
-                    <div style="margin-bottom: 24px;">
-                        <div class="modal-section-title" style="font-size: 0.95rem; margin-bottom: 6px;">Post Caption</div>
-                        <div class="modal-script-box" style="max-height: 140px; font-size: 0.76rem;">${post.caption}</div>
-                    </div>
-
-                    <div class="modal-meta-grid" style="grid-template-columns: 1fr 1fr; padding: 12px 0; margin-bottom: 24px;">
-                        <div class="modal-meta-item">
-                            <span>Key Metrics</span>
-                            <strong style="font-size: 0.8rem;">${post.performance}</strong>
+                    <div class="modal-meta-grid" style="grid-template-columns: 1fr 1fr; padding: 16px 0; margin-bottom: 24px; border-top: 1px solid var(--border-glass); border-bottom: 1px solid var(--border-glass); gap: 16px;">
+                        <div class="modal-meta-item" style="display: flex; flex-direction: column; gap: 4px;">
+                            <span style="font-size: 0.7rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px;">My Role</span>
+                            <strong style="font-size: 0.82rem; color: var(--text-primary); font-weight: 600; line-height: 1.3;">${post.role}</strong>
                         </div>
-                        <div class="modal-meta-item">
-                            <span>My Role</span>
-                            <strong style="font-size: 0.8rem;">${post.role}</strong>
+                        <div class="modal-meta-item" style="display: flex; flex-direction: column; gap: 4px;">
+                            <span style="font-size: 0.7rem; text-transform: uppercase; color: var(--text-muted); letter-spacing: 0.5px;">Tools Used</span>
+                            <strong style="font-size: 0.82rem; color: var(--text-primary); font-weight: 600; line-height: 1.3;">${post.tools}</strong>
                         </div>
                     </div>
 
-                    <a href="${post.instagramUrl}" target="_blank" class="btn btn-primary btn-shimmer" style="align-self: flex-start; padding: 10px 24px; font-size: 0.8rem;">
-                        View Live Post <i class="fa-brands fa-instagram" style="margin-left: 6px;"></i>
+                    <a href="${post.livePostLink}" target="_blank" class="btn btn-primary btn-shimmer" style="align-self: flex-start; padding: 12px 28px; font-size: 0.8rem; display: flex; align-items: center; gap: 8px;">
+                        View Live Post <i class="fa-brands ${platformIconClass}"></i>
                     </a>
                 </div>
             </div>
