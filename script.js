@@ -7,114 +7,125 @@ document.addEventListener('DOMContentLoaded', () => {
     // Video Work Projects Database
     const videoProjects = [
         {
-            id: "shoonya",
-            brand: "Shoonya",
-            campaign: "Zero Brokerage Advocacy",
-            role: "Social Media Executive",
-            platform: "YouTube Shorts & Reels",
-            objective: "Highlight brokerage savings for active traders using mathematical comparison tables.",
-            resultsText: "78K+ Views, 4.2K+ Engagements, 12% Conversion Growth",
+            id: "office-relatable-shake-hands",
+            brand: "Office Relatable",
+            campaign: "Shake Hands – Viral Office Short",
+            role: "Content Ideation • Script Planning • Creative Strategy",
+            platform: "YouTube Shorts",
+            objective: "Create a highly relatable office-based short that captures attention instantly and encourages audience interaction through curiosity-driven storytelling.",
+            resultsText: "2.74M+ Views, 46K Likes, 114 Comments",
             metrics: [
-                { label: "Views", val: "78K+" },
-                { label: "Engagements", val: "4.2K+" },
-                { label: "Saves", val: "310+" },
-                { label: "Conversion", val: "1.8%" }
+                { label: "Views", val: "2.74M+" },
+                { label: "Likes", val: "46K" },
+                { label: "Comments", val: "114" },
+                { label: "Published", val: "18 Mar 2026" }
             ],
-            challenge: "Differentiating Shoonya from established platforms with larger marketing budgets, and explaining complex brokerage fees in under 30 seconds.",
-            strategy: "Focused on raw math: calculating exactly how much brokerage active option traders pay annually and demonstrating how they can save enough for a vacation by switching.",
-            script: "[Hook] 'Stop paying your broker's rent!' \n[Action] 'If you trade 10 lots daily, you pay Rs. 4,000 monthly in brokerage. With Shoonya, that number is zero. Yes, Rs. 0.' \n[Outro] 'Switch to Shoonya now and save your hard-earned cash.'",
-            storyboard: "Frame 1: Angry trader staring at brokerage statements. \nFrame 2: Visual overlay showing Rs. 48,000 saved per year. \nFrame 3: App interface showing zero fee trading screens. \nFrame 4: Shoonya logo and download buttons.",
-            execution: "Designed in CapCut and Canva. Rapid-fire vertical formatting. Visualizing numbers using quick dynamic typography and screen-record callouts. Autoplay triggers silent subtitles to keep the hook accessible.",
+            challenge: "Create relatable office content that grabs attention in the first few seconds and encourages viewers to engage.",
+            strategy: "Used a common workplace situation (employees leaving exactly at 6 PM) with a curiosity-driven hook to increase watch time, comments, and shares.",
+            script: "[Hook] 'Shake hands with someone who leaves office at exactly 6 PM.' \\n[Execution] Fast-paced editing, bold captions, relatable office visuals, and an open-ended ending to encourage audience participation.",
+            storyboard: "Frame 1: Office setting with employees working. \\nFrame 2: The hook question appears on screen. \\nFrame 3: Relatable reactions from office workers. \\nFrame 4: Open-ended ending encouraging comments and shares.",
+            execution: "Shot vertically inside the office using natural lighting and handheld camera movement. Edited with fast-paced cuts, bold captions, and trending audio to maximize watch time and engagement.",
             videoUrl: "assets/video_shoonya.mp4",
-            lessons: "Clear math comparison tables establish instant trust and drive significantly higher application download conversions than vague value propositions."
+            watchUrl: "https://youtube.com/shorts/",
+            lessons: "Simple, relatable workplace content combined with curiosity can generate strong organic reach and engagement."
         },
         {
-            id: "stable-money",
-            brand: "Stable Money",
-            campaign: "Fixed Deposit Strategy Reel",
-            role: "Content Strategist & Scriptwriter",
-            platform: "Instagram Reels",
-            objective: "Promote retail investor interest in High-Yield Fixed Deposits through relatable humor.",
-            resultsText: "45K+ Views, 2.5K+ Likes, 150+ Shares, 3.4% App CTR",
+            id: "genz-vs-millennials",
+            brand: "Office Relatable",
+            campaign: "Gen Z vs Millennials – Office Comedy Short",
+            role: "Content Ideation • Script Planning • Creative Strategy",
+            platform: "YouTube Shorts",
+            objective: "Create a humorous, highly relatable short comparing Gen Z and Millennials in everyday office life to drive engagement, comments, and shares.",
+            resultsText: "2.4K+ Views, 30 Likes, 5 Comments",
             metrics: [
-                { label: "Views", val: "45K+" },
-                { label: "Likes", val: "2.5K+" },
-                { label: "Shares", val: "150+" },
-                { label: "App CTR", val: "3.4%" }
+                { label: "Views", val: "2.4K+" },
+                { label: "Likes", val: "30" },
+                { label: "Comments", val: "5" },
+                { label: "Published", val: "30 Mar 2026" }
             ],
-            challenge: "Fixed deposits are traditionally perceived as slow and conservative. The challenge was making FDs appeal to younger retail investors accustomed to high-risk equity trading.",
-            strategy: "Used humor-based hooks comparing volatile cryptocurrency portfolios to the emotional stability of high-yield FDs. Kept the visual formatting punchy with contrast colors.",
-            script: "[Hook] 'POV: You are checking your crypto wallet at 2 AM...' \n[Cut to actor crying] \n[Voiceover] 'Meanwhile, your Fixed Deposit is earning a steady 9.1% interest while you sleep.' \n[Action] 'Click the link in bio to secure your capital today.'",
-            storyboard: "Frame 1: Volatile line graph reflecting a market crash. Text: 'Crypto portfolio down 20%'. \nFrame 2: Calm user sleeping comfortably. \nFrame 3: Comparison chart comparing FD interest rates. \nFrame 4: CTA overlay highlighting 'Stable Money' logo.",
-            execution: "Created using Adobe Express and CapCut. Under 30 seconds run-time. Bold text outlines, dynamic zooming, and trending sound clips were integrated to appeal to the Instagram explore algorithm.",
+            challenge: "Create engaging office content around generational differences that instantly resonates with young professionals and encourages discussion.",
+            strategy: "Used relatable humor, expressive acting, and a comparison-based storytelling format to highlight the funny differences between Gen Z and Millennials, encouraging viewers to comment on which generation they relate to.",
+            script: "[Hook] 'Gen Z vs Millennials – The Ultimate Difference.' \\n[Execution] Short comedic scenes, conversational dialogue, quick pacing, expressive reactions, and captions optimized for mobile viewing. \\n[CTA] 'Which one are you—Gen Z or Millennial? Comment below.'",
+            storyboard: "Frame 1: Title card – Gen Z vs Millennials. \\nFrame 2: Side-by-side comedic comparison scenes. \\nFrame 3: Expressive reactions highlighting generational differences. \\nFrame 4: CTA encouraging viewers to comment which generation they relate to.",
+            execution: "A relatable office comedy highlighting the everyday differences between Gen Z and Millennials through humor, expressive storytelling, and engaging short-form content designed to spark conversations and audience interaction.",
             videoUrl: "assets/video_stable_money.mp4",
-            lessons: "Relatable humor out-performs straight financial tutorials by 3x on social platforms when targeting younger demographics."
+            watchUrl: "https://youtube.com/shorts/",
+            lessons: "Simple, relatable workplace humor and comparison-based storytelling create higher engagement by encouraging viewers to share opinions and tag friends."
         },
         {
-            id: "five-paisa",
-            brand: "5 Paisa",
-            campaign: "SIP Automation Guide",
-            role: "Content Executive",
-            platform: "Instagram & YouTube",
-            objective: "Guide first-time earners on activating automated monthly Mutual Fund SIPs.",
-            resultsText: "92K+ Views, 5.8K+ Likes, 440+ Saves, 4.6% Conversion Rate",
-            metrics: [
-                { label: "Views", val: "92K+" },
-                { label: "Likes", val: "5.8K+" },
-                { label: "Saves", val: "440+" },
-                { label: "Conversion", val: "4.6%" }
-            ],
-            challenge: "Users downloading the application but failing to complete their initial investment transaction due to interface friction.",
-            strategy: "Developed a step-by-step mobile UI walkthrough showing how simple it is to activate a Rs. 500 auto-SIP, demystifying the onboarding process.",
-            script: "'Can you invest a cup of coffee daily into your future?' \n[Walkthrough] 'Open 5paisa app. Click SIP. Type 500. Select Auto-pay. You are done in under 60 seconds.' \n[Hook] 'Let compound interest do the rest.'",
-            storyboard: "Frame 1: Split screen showing a Rs. 150 coffee cup vs Rs. 150 invested daily. \nFrame 2: UI screen record of the 5paisa dashboard. \nFrame 3: Selection of automated bank mandate. \nFrame 4: Success checkmark screen. Text: 'First SIP active'.",
-            execution: "Recorded directly on mobile, edited in Premiere Pro and Adobe Express. Integrated clean screen zoom indicators and a calm voiceover track to keep users focused during technical steps.",
-            videoUrl: "assets/video_5paisa.mp4",
-            lessons: "Reducing transaction anxiety via simple step-by-step guides directly increases onboarding completion rate by 25%."
-        },
-        {
-            id: "zet",
-            brand: "Zet",
-            campaign: "Financial Agent Recruitment",
-            role: "Lead Strategist",
-            platform: "Facebook & Instagram Ads",
-            objective: "Recruit remote financial agents in Tier-2/Tier-3 cities to sell credit cards.",
-            resultsText: "120K+ Reach, 620+ Completed Agent Applications, 4.8x ROI",
-            metrics: [
-                { label: "Reach", val: "120K+" },
-                { label: "Applications", val: "620+" },
-                { label: "Cost Per Lead", val: "Rs.18" },
-                { label: "ROI", val: "4.8x" }
-            ],
-            challenge: "Overcoming localized skepticism regarding online earning programs and zero-investment business opportunities.",
-            strategy: "Focused on authentic social proof and zero-investment startup. Featured real-life video success stories of existing agents earning stable payouts.",
-            script: "'Bina kisi investment ke, apne mobile se monthly Rs. 30,000+ kamaye.' \n[Interview] 'Ramesh from Patna shared how Zet helped him double his income in 3 months.' \n[CTA] 'Join Zet today as a financial partner.'",
-            storyboard: "Frame 1: Bold statement: 'Zero Investment Earning'. \nFrame 2: Agent Ramesh smiling and displaying payouts screen. \nFrame 3: Selection of products (Credit cards, loans) listed on Zet. \nFrame 4: Simple signup button layout.",
-            execution: "Produced in vernacular language with high-contrast text overlays and bold call-to-actions, specifically optimized for regional Facebook and Instagram ad auctions.",
-            videoUrl: "assets/video_zet.mp4",
-            lessons: "Vernacular language content creates immediate trust in regional markets, dropping acquisition cost by 40%."
-        },
-        {
-            id: "influenceract",
+            id: "office-comedy-lame-jokes",
             brand: "InfluencerAct",
-            campaign: "Creator Ecosystem Growth",
-            role: "Social Media Executive",
-            platform: "Instagram Reels & YouTube",
-            objective: "Attract emerging content creators to join the agency's influencer roster.",
-            resultsText: "210K+ Combined Views, 12K+ Engagements, 85+ Creator Applications",
+            campaign: "Office Comedy – Lame Jokes Part 3",
+            role: "Content Executive",
+            platform: "Instagram Reels",
+            objective: "Create a relatable office comedy reel using a recurring 'Lame Jokes' series to maximize engagement, comments, shares, and audience retention.",
+            resultsText: "39.2K+ Views, 144 Likes, 26 Shares, 14 Saves",
             metrics: [
-                { label: "Views", val: "210K+" },
-                { label: "Engagements", val: "12K+" },
-                { label: "Shares", val: "550+" },
-                { label: "Applications", val: "85+" }
+                { label: "Views", val: "39.2K+" },
+                { label: "Likes", val: "144" },
+                { label: "Shares", val: "26" },
+                { label: "Saves", val: "14" },
+                { label: "Avg Watch", val: "20s" },
+                { label: "Reach", val: "1,410" }
             ],
-            challenge: "Building agency credibility in a highly competitive influencer marketing landscape.",
-            strategy: "Positioned the agency as growth enablers by showing actual before-after creator metrics under our brand management.",
-            script: "'How this creator went from 10k to 100k followers in 30 days.' \n[Analysis] '1. Custom style manual, 2. Trending keyword templates, 3. Community engagements. All done through InfluencerAct.' \n[CTA] 'Apply to our roster today.'",
-            storyboard: "Frame 1: Graph showing exponential growth line. Text: '+500% Views'. \nFrame 2: Strategy breakdown text tiles. \nFrame 3: Snippets of creator content assets. \nFrame 4: InfluencerAct contact page CTA.",
-            execution: "Designed using Figma and Adobe Express. Cut to high-tempo audio beats with smooth text reveals and click-through link pointers to form pages.",
+            challenge: "Create a recurring comedy format that keeps audiences coming back for more while maintaining high engagement and shareability.",
+            strategy: "Leveraged a recurring 'Lame Jokes' series format with relatable office humor, quick pacing, and expressive acting to build a loyal audience that anticipates each new installment.",
+            script: "[Hook] Office comedy setup with a lame joke premise. \\n[Execution] Quick comedic delivery, expressive reactions, and relatable office scenarios. \\n[CTA] Encourage viewers to share with colleagues who tell lame jokes.",
+            storyboard: "Frame 1: Office setting with the joke setup. \\nFrame 2: Delivery of the lame joke with dramatic pause. \\nFrame 3: Over-the-top reactions from colleagues. \\nFrame 4: Punchline and CTA to follow for more.",
+            execution: "Shot vertically inside the office with natural lighting. Edited in CapCut with quick cuts, bold captions, and comedic timing optimized for Instagram Reels format.",
+            videoUrl: "assets/video_5paisa.mp4",
+            watchUrl: "[Paste Instagram Reel URL here]",
+            lessons: "Recurring series formats build audience loyalty and anticipation, leading to consistently higher engagement rates with each new installment."
+        },
+        {
+            id: "fun-friday-office-game",
+            brand: "InfluencerAct",
+            campaign: "Fun Friday – Office Game Reel",
+            role: "Content Executive",
+            platform: "Instagram Reels",
+            objective: "Create a fun office culture reel that boosts employee engagement while showcasing a positive and energetic workplace environment.",
+            resultsText: "25.2K+ Views, 139 Likes, 16 Saves, 6 Shares",
+            metrics: [
+                { label: "Views", val: "25.2K+" },
+                { label: "Likes", val: "139" },
+                { label: "Saves", val: "16" },
+                { label: "Shares", val: "6" },
+                { label: "Avg Watch", val: "20s" },
+                { label: "Reach", val: "741" }
+            ],
+            challenge: "Create a fun office culture reel that boosts employee engagement while showcasing a positive and energetic workplace environment.",
+            strategy: "Captured a Fun Friday team activity using short, dynamic clips, trending background music, and quick edits to create entertaining, shareable content that highlights company culture.",
+            script: "[Hook] 'Fun Friday at the Office! 🎉' \\n[Action] Show teammates participating in a fun challenge, cheering each other on, and ending with a lighthearted team celebration.",
+            storyboard: "Frame 1: 'Fun Friday' title with team introduction. \\nFrame 2: Employees participating in the game. \\nFrame 3: Funny reactions and cheering moments. \\nFrame 4: Team celebration with CTA to follow for more office content.",
+            execution: "Shot vertically using natural lighting and handheld camera movement. Edited in CapCut with upbeat music, subtitles, smooth transitions, and quick cuts to keep viewers engaged.",
+            videoUrl: "assets/video_zet.mp4",
+            watchUrl: "[Paste Instagram Reel URL here]",
+            lessons: "Office culture content creates stronger emotional connections with the audience, increasing shares, saves, and overall engagement while strengthening employer branding."
+        },
+        {
+            id: "manager-interrupts-call",
+            brand: "InfluencerAct",
+            campaign: "Manager Interrupts Your Call – Office Comedy",
+            role: "Content Executive",
+            platform: "Instagram Reels",
+            objective: "Create a highly relatable office comedy reel around a common workplace situation—employees getting interrupted while they're on a call—to maximize engagement and audience retention.",
+            resultsText: "51.8K+ Views, 170 Likes, 18 Saves, 12 Comments",
+            metrics: [
+                { label: "Views", val: "51.8K+" },
+                { label: "Likes", val: "170" },
+                { label: "Saves", val: "18" },
+                { label: "Comments", val: "12" },
+                { label: "Avg Watch", val: "19s" },
+                { label: "Reach", val: "10,352" }
+            ],
+            challenge: "Create a highly relatable office comedy reel around a common workplace situation—employees getting interrupted while they're on a call—to maximize engagement and audience retention.",
+            strategy: "Used a simple workplace scenario with natural acting, short dialogue, and relatable humor. Focused on quick pacing, subtitles, and a strong opening hook to encourage shares and comments.",
+            script: "[Hook] 'Your manager tells you to do something while you're on a call.' \\n[Action] Show the employee trying to handle the call while being interrupted by the manager, followed by a humorous reaction that every office employee can relate to.",
+            storyboard: "Frame 1: Employee talking on an office call. \\nFrame 2: Manager interrupts with another task. \\nFrame 3: Confused and awkward reaction. \\nFrame 4: Funny ending with relatable office humor and CTA to share with coworkers.",
+            execution: "Shot vertically inside the office using natural lighting and handheld camera movement. Edited in CapCut with subtitles, quick cuts, zoom effects, and fast-paced transitions to improve watch time and retention.",
             videoUrl: "assets/video_generic.mp4",
-            lessons: "Showing concrete proof of client success is the most persuasive recruitment tool available."
+            watchUrl: "[Paste Instagram Reel URL here]",
+            lessons: "Relatable workplace scenarios consistently perform well because they encourage viewers to tag friends, share with colleagues, and engage through comments."
         }
     ];
 
@@ -122,12 +133,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const socialPosts = [
         {
             id: "project1",
-            title: "Stable Money – Fixed Deposit Campaign",
+            title: "2X ROI, Not Just Hopes",
             platform: "Instagram",
             contentType: "Carousel",
             image: "assets/WhatsApp Image 2026-07-14 at 10.37.58 PM.jpeg",
-            description: "Designed an educational Instagram carousel explaining Fixed Deposit concepts in a simple and visually engaging way. The goal was to simplify financial information while maintaining strong visual storytelling.",
-            role: "Content Planning, Copywriting, Carousel Design",
+            description: "Designed a branding-focused Instagram carousel for InfluencerAct to communicate how strategic influencer marketing delivers measurable ROI instead of vanity metrics. The carousel simplifies the value proposition using clean visuals, bold messaging, and a premium corporate design to build trust and encourage brand collaborations.",
+            role: "Content Strategy, Copywriting, Carousel Planning, Design Direction",
             tools: "Canva, ChatGPT",
             livePostLink: "https://www.instagram.com/p/DTRytCHEvkh/",
             imgW: 1170,
@@ -135,13 +146,13 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         {
             id: "project2",
-            title: "5 Paisa – Investment Awareness Post",
+            title: "Official Apology Statement",
             platform: "Instagram",
             contentType: "Static Post",
             image: "assets/WhatsApp Image 2026-07-14 at 10.39.04 PM.jpeg",
-            description: "Designed a clean and engaging static post to communicate investment-related information with strong branding and clear messaging.",
-            role: "Content Planning, Graphic Design",
-            tools: "Canva",
+            description: "Designed a humorous, brand-first Instagram static post for InfluencerAct using a fake 'Official Apology Statement' format. The creative uses witty copywriting to highlight the agency's marketing performance, campaign execution, and ROI while making the content highly shareable and memorable. The objective was to strengthen brand identity through relatable corporate humor.",
+            role: "Creative Concept, Copywriting, Content Planning, Graphic Design",
+            tools: "Canva, ChatGPT",
             livePostLink: "https://www.instagram.com/p/DQwPF4MDNVV/",
             imgW: 1170,
             imgH: 1463
@@ -186,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             strategy: "Maintain a 3-pillar content distribution: 40% Engagement & Reels (Viral Hooks), 40% Value & Carousels (Saves & Shares), 20% Conversion & Stories (DM Automation triggers).",
             pillar: "Personal Finance / Career Growth / Social Media Tips",
             frequency: "4 Posts/Week (2 Reels, 1 Carousel, 1 Static) + Daily Stories",
-            workflow: "Idea Research -> Keyword Strategy -> Visual Mockups in Figma -> Copywriting & Hooks -> Scheduling in Meta Business Suite",
+            workflow: "Idea Research -> Keyword Strategy -> Visual Mockups in Claude -> Copywriting & Hooks -> Scheduling in Meta Business Suite",
             process: "Reviewing weekly explorer page metrics, designing grids using soft HSL Pinterest palettes, and pre-recording vertical video batches.",
             calendarImg: "assets/calendar_instagram_jan.jpg",
             preview: "Grid visual planner showcasing high-converting titles, visual palettes, and schedule slots.",
@@ -295,7 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
             pillar: "Quality Assurance / Compliance / Client Communication",
             frequency: "Continuous Cycle",
             workflow: "First Draft -> Design Review -> Brand Compliance Check -> Client Approval -> Scheduled",
-            process: "Logging comments on Notion boards, updating templates, and tracking revision histories.",
+            process: "Logging comments on collaboration boards, updating templates, and tracking revision histories.",
             preview: "Kanban board card workspace showing stages: Idea, In Writing, In Design, Client Approval, and Ready to Publish.",
             notes: "Eliminates publishing errors and keeps agency, creator, and brand client perfectly aligned."
         }
@@ -308,12 +319,12 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "How I systematically identify cultural waves and viral formats before they peak, utilizing data-driven tracking tools instead of passive browsing.",
             badges: ["Google Trends", "TikTok Creative Center", "Instagram Explore", "Feedly RSS"],
             step: "Pillars of Trend Research",
-            details: "1. DAILY AUDITING: Spending 20 mins on TikTok Creative Center filtering by 'Most Liked Reels' in regional finance/tech sectors.<br>2. HOOK CATALOGING: Extracting high-converting audio tracks and text prompts into a Notion repository.<br>3. CONTEXTUAL TRANSLATION: Adapting global trends to fit local FinTech brands (e.g. converting a viral dance trend into a brokerage calculator walkthrough)."
+            details: "1. DAILY AUDITING: Spending 20 mins on TikTok Creative Center filtering by 'Most Liked Reels' in regional finance/tech sectors.<br>2. HOOK CATALOGING: Extracting high-converting audio tracks and text prompts into a content repository.<br>3. CONTEXTUAL TRANSLATION: Adapting global trends to fit local FinTech brands (e.g. converting a viral dance trend into a brokerage calculator walkthrough)."
         },
         competitor: {
             title: "Competitor Grid & Content Auditing",
             desc: "Conducting content audits on major regional players to extract formatting templates and pinpoint content gaps.",
-            badges: ["Competitor Mapping", "Gap Auditing", "Engagement Ratio Check", "Figma Design Review"],
+            badges: ["Competitor Mapping", "Gap Auditing", "Engagement Ratio Check", "Claude Design Review"],
             step: "Competitor Audit Process",
             details: "1. METRIC MAPPING: Reviewing top 5 competitors' grids and calculating their average engagement rates per format (Reels vs. Carousels).<br>2. GAPS CAPTURING: Identifying topics they avoid due to complexity (e.g. detailed auto-pay walkthroughs).<br>3. DESIGN CONTRASTING: Creating layout guidelines that visually break away from generic competitor styles (e.g. soft luxury vs. corporate blue)."
         },
@@ -624,7 +635,11 @@ document.addEventListener('DOMContentLoaded', () => {
             openCaseStudyModal(proj.id);
         });
         featuredVideoBox.querySelector('.watch-full-video').addEventListener('click', () => {
-            openVideoPlayerOnly(proj);
+            if (proj.watchUrl && proj.watchUrl.startsWith('http') && !proj.watchUrl.includes('placeholder') && !proj.watchUrl.includes('Paste')) {
+                window.open(proj.watchUrl, '_blank');
+            } else {
+                openVideoPlayerOnly(proj);
+            }
         });
     }
 
@@ -1091,6 +1106,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="modal-main-content">
                     <div class="modal-video-box">
                         <video controls class="featured-video-player" width="720" height="1280" src="${proj.videoUrl}"></video>
+                        ${proj.watchUrl && proj.watchUrl.startsWith('http') && !proj.watchUrl.includes('placeholder') && !proj.watchUrl.includes('Paste') ? `
+                            <a href="${proj.watchUrl}" target="_blank" class="modal-video-external-link" style="display: block; text-align: center; margin-top: 12px; color: var(--accent-gold); font-size: 0.85rem; text-decoration: none; font-weight: 500; transition: color 0.3s ease;">
+                                View Live Post <i class="fa-solid fa-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i>
+                            </a>
+                        ` : ''}
                     </div>
 
                     <div class="modal-text-grid">
@@ -1106,10 +1126,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
 
                         <div>
-                            <div class="modal-section-title">Narrative Script</div>
+                            <div class="modal-section-title">Content Breakdown</div>
                             <div class="modal-script-box">${proj.script}</div>
 
-                            <div class="modal-section-title" style="margin-top: 32px;">Visual Storyboard</div>
+                            <div class="modal-section-title" style="margin-top: 32px;">Creative Execution</div>
                             <div class="modal-script-box" style="max-height: 200px;">${proj.storyboard}</div>
 
                             <div class="modal-section-title" style="margin-top: 32px;">Production & Execution</div>
