@@ -182,6 +182,45 @@ document.addEventListener('DOMContentLoaded', () => {
             livePostLink: "https://www.linkedin.com/posts/influenceract_influencermarketing-kolkatamarketing-digitalads-activity-7356574569345794050-BNn1",
             imgW: 1200,
             imgH: 600
+        },
+        {
+            id: "project5",
+            title: "Instagram Account Insights – 42.9K Views",
+            platform: "Instagram",
+            contentType: "Analytics",
+            image: "assets/post_1.jpeg",
+            description: "Real-time Instagram account analytics snapshot showing 42,940 total views with 10,911 accounts reached. Reels contributed 55.1% of views with 71.3% coming from non-followers, validating organic reach performance.",
+            role: "Analytics Reporting, Platform Optimization",
+            tools: "Meta Business Suite",
+            livePostLink: "",
+            imgW: 1080,
+            imgH: 540
+        },
+        {
+            id: "project6",
+            title: "Instagram Account Insights – 130K Views",
+            platform: "Instagram",
+            contentType: "Analytics",
+            image: "assets/post_2.jpeg",
+            description: "90-day Instagram analytics dashboard showing 130,742 total views and 42,406 accounts reached. Reels dominated at 68.7% of content views, with 76.1% of reach coming from non-followers — proving strong organic discovery.",
+            role: "Analytics Reporting, Content Strategy Validation",
+            tools: "Meta Business Suite",
+            livePostLink: "",
+            imgW: 1080,
+            imgH: 540
+        },
+        {
+            id: "project7",
+            title: "YouTube Channel Analytics – 2.9M Views",
+            platform: "YouTube",
+            contentType: "Analytics",
+            image: "assets/post_3.jpeg",
+            description: "YouTube Studio analytics for the Office Relatable channel over 365 days: 2.9M views, 17.6K watch hours, and +1.2K subscribers. Realtime counter at 3,112 views in last 48 hours. Demonstrates consistent, high-volume video performance.",
+            role: "YouTube SEO, Channel Management, Analytics",
+            tools: "YouTube Studio",
+            livePostLink: "",
+            imgW: 1080,
+            imgH: 540
         }
     ];
 
@@ -635,7 +674,8 @@ document.addEventListener('DOMContentLoaded', () => {
             openCaseStudyModal(proj.id);
         });
         featuredVideoBox.querySelector('.watch-full-video').addEventListener('click', () => {
-            if (proj.watchUrl && proj.watchUrl.startsWith('http') && !proj.watchUrl.includes('placeholder') && !proj.watchUrl.includes('Paste')) {
+            const isGenericShorts = proj.watchUrl && (proj.watchUrl === "https://youtube.com/shorts/" || proj.watchUrl === "https://youtube.com/shorts");
+            if (proj.watchUrl && proj.watchUrl.startsWith('http') && !proj.watchUrl.includes('placeholder') && !proj.watchUrl.includes('Paste') && !isGenericShorts) {
                 window.open(proj.watchUrl, '_blank');
             } else {
                 openVideoPlayerOnly(proj);
@@ -1106,7 +1146,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 <div class="modal-main-content">
                     <div class="modal-video-box">
                         <video controls class="featured-video-player" width="720" height="1280" src="${proj.videoUrl}"></video>
-                        ${proj.watchUrl && proj.watchUrl.startsWith('http') && !proj.watchUrl.includes('placeholder') && !proj.watchUrl.includes('Paste') ? `
+                        ${proj.watchUrl && proj.watchUrl.startsWith('http') && !proj.watchUrl.includes('placeholder') && !proj.watchUrl.includes('Paste') && proj.watchUrl !== "https://youtube.com/shorts/" && proj.watchUrl !== "https://youtube.com/shorts" ? `
                             <a href="${proj.watchUrl}" target="_blank" class="modal-video-external-link" style="display: block; text-align: center; margin-top: 12px; color: var(--accent-gold); font-size: 0.85rem; text-decoration: none; font-weight: 500; transition: color 0.3s ease;">
                                 View Live Post <i class="fa-solid fa-up-right-from-square" style="font-size: 0.75rem; margin-left: 4px;"></i>
                             </a>
@@ -1200,9 +1240,10 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     </div>
 
+                    ${post.livePostLink ? `
                     <a href="${post.livePostLink}" target="_blank" class="btn btn-primary btn-shimmer" style="align-self: flex-start; padding: 12px 28px; font-size: 0.8rem; display: flex; align-items: center; gap: 8px;">
                         View Live Post <i class="fa-brands ${platformIconClass}"></i>
-                    </a>
+                    </a>` : ''}
                 </div>
             </div>
         `;
