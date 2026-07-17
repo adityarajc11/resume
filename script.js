@@ -730,17 +730,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Card click highlights the featured segment
             card.addEventListener('click', (e) => {
-                // If they clicked the 'View Case' button specifically, open modal directly
-                if (e.target.classList.contains('card-view-details')) {
-                    openCaseStudyModal(card.getAttribute('data-id'));
-                } else {
-                    const selectedId = card.getAttribute('data-id');
-                    const project = videoProjects.find(p => p.id === selectedId);
+                const selectedId = card.getAttribute('data-id');
+                const project = videoProjects.find(p => p.id === selectedId);
+
+                // Clicked "View Case" button or its icon child
+                const viewCaseBtn = e.target.closest('.card-view-details');
+                if (viewCaseBtn) {
+                    openCaseStudyModal(selectedId);
+                    return;
+                }
+
+                // Clicked the play overlay button or its icon child
+                const playBtn = e.target.closest('.card-video-play-btn');
+                if (playBtn) {
                     if (project) {
-                        renderFeaturedProject(project);
-                        // Smooth scroll back to featured window
-                        document.getElementById('featuredVideoBox').scrollIntoView({ behavior: 'smooth', block: 'center' });
+                        const isGenericShorts = project.watchUrl && (project.watchUrl === "https://youtube.com/shorts/" || project.watchUrl === "https://youtube.com/shorts");
+                        if (project.watchUrl && project.watchUrl.startsWith('http') && !project.watchUrl.includes('placeholder') && !project.watchUrl.includes('Paste') && !isGenericShorts) {
+                            window.open(project.watchUrl, '_blank');
+                        } else {
+                            openVideoPlayerOnly(project);
+                        }
                     }
+                    return;
+                }
+
+                // Clicked anywhere else on the card → update featured block
+                if (project) {
+                    renderFeaturedProject(project);
+                    document.getElementById('featuredVideoBox').scrollIntoView({ behavior: 'smooth', block: 'center' });
                 }
             });
         });
